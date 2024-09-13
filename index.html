@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#x0627;&#x0644;&#x0622;&#x0644;&#x0629; &#x0627;&#x0644;&#x062D;&#x0627;&#x0633;&#x0628;&#x0629;</title>
+    <style>
+        .xy101010 {
+            width: 300px;
+            height: 400px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .zzxy101 {
+            display: none;
+            background-color: #000000;
+            color: #FFFFFF;
+            height: 400px;
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="xy101010">
+        <button onclick="a100100101()">&#x0627;&#x0644;&#x0622;&#x0644;&#x0629; &#x0627;&#x0644;&#x062D;&#x0627;&#x0633;&#x0628;&#x0629;</button>
+        <button onclick="b010101011()">&#x0627;&#x0644;&#x0645;&#x0644;&#x0627;&#x062D;&#x0638;&#x0627;&#x062A;</button>
+        <button onclick="copyDiscordLink()">&#x0646;&#x0633;&#x062E; &#x0631;&#x0627;&#x0628;&#x0637; &#x0627;&#x0644;&#x062F;&#x064A;&#x0633;&#x0643;&#x0648;&#x0631;&#x062F;</button>
+        <button onclick="openFrames()">&#x0641;&#x062A;&#x062D; &#x0627;&#x0644;&#x0641;&#x0631;&#x064A;&#x0645;&#x0627;&#x062A;</button>
+    </div>
+
+    <div class="zzxy101" id="blackScreen">
+        <p>&#x0627;&#x0643;&#x062A;&#x0628; &#x0627;&#x0644;&#x0645;&#x0639;&#x0627;&#x062F;&#x0644;&#x0627;&#x062A; &#x0647;&#x0646;&#x0627;</p>
+        <canvas id="canvas" width="300" height="400" style="border:1px solid #fff;"></canvas>
+    </div>
+
+    <script>
+        
+
+        (function() {
+            var encFuncs = ['\u0627\u0644\u0631\u0627\u0628\u0637 \u0646\u0633\u062E\u0627\u0644\u062F\u064A\u0633\u0643\u0648\u0631\u062F', 'https://discord.gg/QkjkeU9Q'];
+
+            function copyDiscordLink() {
+                var el = document.createElement('textarea');
+                el.value = encFuncs[1]; 
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+                alert(encFuncs[0]);
+            }
+
+            function openFrames() {
+                alert('\u0639\u0631\u0636 \u0627\u0644\u0641\u0631\u064A\u0645\u0627\u062A');
+            }
+
+            window.a100100101 = function() {
+                
+            }
+
+            window.b010101011 = function() {
+                var blackScreen = document.getElementById('blackScreen');
+                blackScreen.style.display = blackScreen.style.display === 'none' ? 'block' : 'none';
+            }
+        })();
+    </script>
+</body>
